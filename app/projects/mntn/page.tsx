@@ -137,27 +137,6 @@ export default function MNTNProject() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gradient">UX Workflow Example</h2>
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-blue-100 mb-4">
-            <p className="text-gray-800 mb-4 leading-relaxed">
-              The workflow enables designers to rapidly prototype creative concepts through an iterative, 
-              human-in-the-loop process. Designers enter their creative intent, and the system generates 
-              initial outputs using AI models. Progress indicators keep designers informed during async 
-              processing. At review points, designers can edit, regenerate, or approve outputs—maintaining 
-              creative control while benefiting from AI acceleration. This pattern reduces prototype 
-              development time from days to hours while ensuring designer agency throughout the process.
-            </p>
-          </div>
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border-2 border-purple-200">
-            <img 
-              src="/mntn/workflow-diagram.svg" 
-              alt="Multi-Step AI Interaction Workflow Diagram" 
-              className="w-full h-auto rounded-lg"
-            />
-          </div>
-        </section>
-
-        <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gradient">Technical Deep-Dive</h2>
           <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-6 mb-4 shadow-lg text-white">
             <h3 className="font-bold text-lg mb-3">State Machine Pattern</h3>
