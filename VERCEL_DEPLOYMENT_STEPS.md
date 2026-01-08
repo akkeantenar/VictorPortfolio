@@ -26,7 +26,7 @@ cd /Users/anthonymiller/Data/Portfolio
 # Initialize git (if not already done)
 git init
 
-# Add all files
+# Add all files.  
 git add .
 
 # Commit
