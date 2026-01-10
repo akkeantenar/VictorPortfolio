@@ -36,6 +36,7 @@ export default function SnapProject() {
               src="/snap/component-architecture.svg" 
               alt="Three-Tier UX Prototyping Component Architecture Diagram" 
               className="w-full h-auto rounded-lg"
+              loading="lazy"
             />
           </div>
         </div>
@@ -190,6 +191,7 @@ export default function SnapProject() {
               src="/snap/component-architecture.svg" 
               alt="Three-Tier UX Prototyping Component Architecture Diagram" 
               className="w-full h-auto rounded-lg"
+              loading="lazy"
             />
             <p className="text-sm text-gray-600 mt-3 text-center italic">
               Three-tier architecture enabling rapid UX experimentation through reusable primitives, composed patterns, 

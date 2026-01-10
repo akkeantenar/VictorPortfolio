@@ -1,18 +1,35 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="max-w-4xl mx-auto">
         <header className="mb-12 animate-fade-in">
-          <p className="text-lg font-medium text-gray-600 mb-2">Victor Li</p>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gradient">
-            Senior UX/UI Engineer
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-8">
-            AI-Assisted UX Prototyping & Internal Tools
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mb-8"></div>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
+            <div className="flex-shrink-0">
+              <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white/50">
+                <Image
+                  src="/portfolio-image.jpg"
+                  alt="Victor Li - Senior UX/UI Engineer"
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 768px) 192px, 224px"
+                />
+              </div>
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <p className="text-lg font-medium text-gray-600 mb-2">Victor Li</p>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gradient">
+                Senior UX/UI Engineer
+              </h1>
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                AI-Assisted UX Prototyping & Internal Tools
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mx-auto md:mx-0"></div>
+            </div>
+          </div>
         </header>
         
         <div className="prose prose-lg max-w-none mb-12 animate-slide-up">
@@ -74,7 +91,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <Link 
               href="/projects/mntn" 
-              className="block p-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl hover:from-blue-600 hover:to-blue-700 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group text-white"
+              className="block p-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl hover:from-blue-600 hover:to-blue-700 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group text-white focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2"
             >
               <div className="mb-4">
                 <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 group-hover:bg-white/30 transition-colors">
@@ -90,7 +107,7 @@ export default function Home() {
 
             <Link 
               href="/projects/snap" 
-              className="block p-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl hover:from-purple-600 hover:to-purple-700 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group text-white"
+              className="block p-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl hover:from-purple-600 hover:to-purple-700 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group text-white focus:outline-none focus:ring-4 focus:ring-purple-300 focus:ring-offset-2"
             >
               <div className="mb-4">
                 <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 group-hover:bg-white/30 transition-colors">
@@ -106,7 +123,7 @@ export default function Home() {
 
             <Link 
               href="/projects/netflix" 
-              className="block p-6 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl hover:from-pink-600 hover:to-pink-700 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group text-white"
+              className="block p-6 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl hover:from-pink-600 hover:to-pink-700 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group text-white focus:outline-none focus:ring-4 focus:ring-pink-300 focus:ring-offset-2"
             >
               <div className="mb-4">
                 <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 group-hover:bg-white/30 transition-colors">

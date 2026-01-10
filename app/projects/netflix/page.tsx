@@ -37,6 +37,7 @@ export default function NetflixProject() {
               src="/netflix/playback-accessibility-prototype.svg" 
               alt="Playback UX Prototype showing accessible controls with keyboard focus and screen reader annotations" 
               className="w-full h-auto rounded-lg"
+              loading="lazy"
             />
           </div>
         </div>
@@ -192,6 +193,7 @@ export default function NetflixProject() {
               src="/netflix/playback-interaction-flow.svg" 
               alt="Playback interaction flow diagram showing user actions and accessibility checkpoints" 
               className="w-full h-auto rounded-lg"
+              loading="lazy"
             />
           </div>
         </section>

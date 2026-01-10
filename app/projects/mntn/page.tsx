@@ -3,7 +3,7 @@ export default function MNTNProject() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
-          <span className="text-sm font-medium text-blue-600">MNTN • Senior Software Engineer</span>
+          <span className="text-sm font-medium text-blue-600">MNTN • Senior UX/UI Engineer</span>
           <h1 className="text-5xl md:text-6xl font-bold mt-2 mb-4 text-gradient">
             AI-Assisted Creative Prototyping Tool
           </h1>
@@ -38,6 +38,7 @@ export default function MNTNProject() {
               src="/mntn/architecture-diagram.svg" 
               alt="AI-Assisted Creative Prototyping Tool Architecture Diagram" 
               className="w-full h-auto rounded-lg"
+              loading="lazy"
             />
           </div>
         </div>
@@ -65,7 +66,7 @@ export default function MNTNProject() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">My Role</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Senior Software Engineer owning frontend UX implementation</li>
+            <li>Senior UX/UI Engineer owning frontend UX implementation</li>
             <li>Built interactive prototypes using React and TypeScript</li>
             <li>Worked closely with designers to iterate on flows</li>
             <li>Collaborated with design and research teams to understand prototyping needs</li>

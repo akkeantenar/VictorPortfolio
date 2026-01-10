@@ -1,9 +1,27 @@
+import Image from 'next/image'
+
 export default function About() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold mb-8 text-gradient">About</h1>
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mb-12"></div>
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
+          <div className="flex-shrink-0">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white/50">
+              <Image
+                src="/portfolio-image.jpg"
+                alt="Victor Li - Senior UX/UI Engineer"
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 768px) 192px, 256px"
+              />
+            </div>
+          </div>
+          <div className="flex-1 text-center md:text-left">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4 text-gradient">About</h1>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mx-auto md:mx-0"></div>
+          </div>
+        </div>
 
         <section className="mb-12">
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-100">
