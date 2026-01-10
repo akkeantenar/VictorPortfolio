@@ -1,136 +1,139 @@
+import Link from 'next/link'
 import PortfolioImage from '@/components/PortfolioImage'
 
 export default function About() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
-          <div className="flex-shrink-0">
-            <PortfolioImage 
-              width={256}
-              height={256}
-              className="w-48 h-48 md:w-64 md:h-64"
-            />
+        <header className="mb-12 animate-fade-in">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
+            <div className="flex-shrink-0">
+              <PortfolioImage 
+                width={224}
+                height={224}
+                className="w-48 h-48 md:w-56 md:h-56"
+              />
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <p className="text-lg font-medium text-gray-600 mb-2">Victor Li</p>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gradient">
+                Senior UX/UI Engineer
+              </h1>
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                AI-Assisted UX Prototyping & Internal Tools
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mx-auto md:mx-0"></div>
+            </div>
           </div>
-          <div className="flex-1 text-center md:text-left">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4 text-gradient">About</h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mx-auto md:mx-0"></div>
+        </header>
+        
+        <div className="prose prose-lg max-w-none mb-12 animate-slide-up">
+          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-100">
+            <p className="text-lg text-gray-800 leading-relaxed mb-4">
+              Senior UX/UI Engineer with <span className="font-semibold text-blue-600">10 years of experience</span> focused on UX engineering, 
+              prototyping, and internal tools. I build <span className="font-semibold text-purple-600">AI-enhanced prototyping workflows</span> and 
+              design enablement tools that help teams iterate faster and collaborate more effectively.
+            </p>
+            
+            <p className="text-lg text-gray-800 leading-relaxed mb-4">
+              My work centers on creating <span className="font-semibold text-pink-600">agentic, multi-step UX interactions</span> and internal tooling 
+              that bridges the gap between design and engineering. I partner closely with designers 
+              and researchers to build rapid prototypes used for experimentation and validation.
+            </p>
+            
+            <p className="text-lg text-gray-800 leading-relaxed">
+              This portfolio demonstrates my approach to UX engineering—focusing on enablement, 
+              collaboration, and iterative prototyping rather than production metrics.
+            </p>
           </div>
         </div>
 
-        <section className="mb-12">
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-100">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Background</h2>
-            <p className="text-gray-800 leading-relaxed mb-4">
-              I'm a Senior Software Engineer with <span className="font-semibold text-blue-600">10 years of experience</span> specializing in UX engineering, 
-              prototyping, and internal tools. My career has been focused on building the infrastructure 
-              and workflows that enable design teams to iterate faster and validate ideas more effectively.
-            </p>
-            <p className="text-gray-800 leading-relaxed">
-              I've worked at <span className="font-semibold text-purple-600">MNTN, Snap Inc, and Netflix</span>, where I've consistently focused on the intersection 
-              of design and engineering—building tools that bridge the gap between these disciplines and 
-              enable more collaborative, iterative product development.
-            </p>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gradient">My Approach</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200 hover:shadow-xl transition-all">
-              <h3 className="font-bold text-blue-900 mb-3 text-lg">Design Enablement</h3>
-              <p className="text-gray-800 leading-relaxed text-sm">
-                I build tools and workflows that empower designers to prototype and test ideas independently, 
-                reducing dependencies on engineering resources for early-stage exploration. This includes 
-                AI-assisted content generation, reusable component libraries, and lightweight prototyping frameworks.
-              </p>
+        <section className="mt-16 mb-16" aria-labelledby="skills-heading">
+          <h3 id="skills-heading" className="text-3xl font-bold text-gray-900 mb-8 text-gradient">Core Skills & Technologies</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200 hover:shadow-xl hover:scale-105 transition-all duration-300">
+              <h4 className="font-bold text-blue-900 mb-4 text-lg">Frontend Engineering</h4>
+              <ul className="space-y-2 text-gray-800 text-sm">
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>React, Next.js</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>TypeScript, JavaScript</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Tailwind CSS, CSS-in-JS</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>WebGL, WebAssembly</li>
+              </ul>
             </div>
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border-2 border-purple-200 hover:shadow-xl transition-all">
-              <h3 className="font-bold text-purple-900 mb-3 text-lg">Rapid Iteration</h3>
-              <p className="text-gray-800 leading-relaxed text-sm">
-                Speed is critical in UX validation. I focus on building prototypes that can be assembled 
-                in hours rather than days, using component-based architectures and AI-enhanced workflows 
-                that accelerate the design-to-test cycle.
-              </p>
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border-2 border-purple-200 hover:shadow-xl hover:scale-105 transition-all duration-300">
+              <h4 className="font-bold text-purple-900 mb-4 text-lg">AI & Prototyping</h4>
+              <ul className="space-y-2 text-gray-800 text-sm">
+                <li className="flex items-center"><span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>OpenAI APIs (GPT, Stable Diffusion)</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>Azure OpenAI</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>Figma Plugin API</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>Agentic UX workflows</li>
+              </ul>
             </div>
-            <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-6 border-2 border-pink-200 hover:shadow-xl transition-all">
-              <h3 className="font-bold text-pink-900 mb-3 text-lg">Human-in-the-Loop AI</h3>
-              <p className="text-gray-800 leading-relaxed text-sm">
-                AI is a powerful tool for UX prototyping, but it requires careful UX design itself. I build 
-                agentic workflows that combine multiple AI model calls into cohesive experiences, always 
-                maintaining human control and decision points throughout the process.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-xl p-6 border-2 border-cyan-200 hover:shadow-xl transition-all">
-              <h3 className="font-bold text-cyan-900 mb-3 text-lg">Cross-Functional Collaboration</h3>
-              <p className="text-gray-800 leading-relaxed text-sm">
-                I work closely with designers, researchers, and product teams to understand their needs 
-                and build tools that fit their workflows. This partnership approach ensures that the tools 
-                I build are actually used and valued by the teams they're designed for.
-              </p>
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-6 border-2 border-pink-200 hover:shadow-xl hover:scale-105 transition-all duration-300">
+              <h4 className="font-bold text-pink-900 mb-4 text-lg">Collaboration & Process</h4>
+              <ul className="space-y-2 text-gray-800 text-sm">
+                <li className="flex items-center"><span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>Design-Engineering partnership</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>UX research integration</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>Rapid prototyping methodologies</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>Internal tooling development</li>
+              </ul>
             </div>
           </div>
         </section>
 
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gradient">Experience</h2>
-          <div className="space-y-6">
-            <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 border-l-4 border-blue-700 shadow-lg text-white">
-              <h3 className="font-bold text-lg mb-1">Senior Software Engineer</h3>
-              <p className="text-blue-100 text-sm mb-3 font-medium">MNTN</p>
-              <p className="text-blue-50 text-sm">
-                Built internal creative prototyping tools with AI-assisted workflows. Focused on multi-step 
-                authoring flows and human-in-the-loop UX decisions for content generation.
+        <section className="mt-16" aria-labelledby="projects-heading">
+          <h3 id="projects-heading" className="text-3xl font-bold text-gray-900 mb-8 text-gradient">Featured Projects</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Link 
+              href="/projects/mntn" 
+              className="block p-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl hover:from-blue-600 hover:to-blue-700 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group text-white focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2"
+            >
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 group-hover:bg-white/30 transition-colors">
+                  <span className="text-2xl">✨</span>
+                </div>
+                <h4 className="text-xl font-bold mb-2">AI-Assisted Creative Prototyping</h4>
+                <p className="text-blue-100 mb-3 text-sm font-medium">MNTN • Senior UX/UI Engineer</p>
+              </div>
+              <p className="text-sm text-blue-50">
+                Internal creative prototyping tool with AI-assisted content generation and multi-step authoring flows.
               </p>
-            </div>
-            <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl p-6 border-l-4 border-purple-700 shadow-lg text-white">
-              <h3 className="font-bold text-lg mb-1">Software Engineer</h3>
-              <p className="text-purple-100 text-sm mb-3 font-medium">Snap Inc</p>
-              <p className="text-purple-50 text-sm">
-                Developed internal UX component systems and prototyping tooling for Snapchat for Web. 
-                Enabled rapid testing of interaction patterns and AR interface experimentation.
-              </p>
-            </div>
-            <div className="bg-gradient-to-r from-pink-500 to-pink-600 rounded-xl p-6 border-l-4 border-pink-700 shadow-lg text-white">
-              <h3 className="font-bold text-lg mb-1">Frontend Engineer</h3>
-              <p className="text-pink-100 text-sm mb-3 font-medium">Netflix</p>
-              <p className="text-pink-50 text-sm">
-                Built interactive prototypes for media playback UX and accessibility validation. 
-                Supported UX teams with rapid iteration tools for usability testing.
-              </p>
-            </div>
-          </div>
-        </section>
+            </Link>
 
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gradient">Focus Areas</h2>
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-100">
-            <ul className="space-y-3 text-gray-800">
-              <li className="flex items-start">
-                <span className="text-blue-500 mr-3 text-xl">✨</span>
-                <span>AI-assisted UX prototyping and agentic workflows</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-purple-500 mr-3 text-xl">🧩</span>
-                <span>Internal design enablement tools and component systems</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-pink-500 mr-3 text-xl">⚡</span>
-                <span>Rapid prototyping methodologies for research and validation</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-cyan-500 mr-3 text-xl">🤝</span>
-                <span>Collaboration tools that bridge design and engineering</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-indigo-500 mr-3 text-xl">♿</span>
-                <span>Accessibility-first UX prototyping and testing</span>
-              </li>
-            </ul>
+            <Link 
+              href="/projects/snap" 
+              className="block p-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl hover:from-purple-600 hover:to-purple-700 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group text-white focus:outline-none focus:ring-4 focus:ring-purple-300 focus:ring-offset-2"
+            >
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 group-hover:bg-white/30 transition-colors">
+                  <span className="text-2xl">🧩</span>
+                </div>
+                <h4 className="text-xl font-bold mb-2">Internal UX Component System</h4>
+                <p className="text-purple-100 mb-3 text-sm font-medium">Snap Inc • Software Engineer</p>
+              </div>
+              <p className="text-sm text-purple-50">
+                Reusable UX components and tooling for rapid prototyping and design iteration.
+              </p>
+            </Link>
+
+            <Link 
+              href="/projects/netflix" 
+              className="block p-6 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl hover:from-pink-600 hover:to-pink-700 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group text-white focus:outline-none focus:ring-4 focus:ring-pink-300 focus:ring-offset-2"
+            >
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 group-hover:bg-white/30 transition-colors">
+                  <span className="text-2xl">🎬</span>
+                </div>
+                <h4 className="text-xl font-bold mb-2">UX Prototyping for Media Playback</h4>
+                <p className="text-pink-100 mb-3 text-sm font-medium">Netflix • Frontend Engineer</p>
+              </div>
+              <p className="text-sm text-pink-50">
+                Interactive prototypes for playback control UX and accessibility validation.
+              </p>
+            </Link>
           </div>
         </section>
       </div>
     </div>
   )
 }
-
