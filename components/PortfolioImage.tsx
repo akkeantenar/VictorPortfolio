@@ -28,10 +28,14 @@ export default function PortfolioImage({
           onError={() => setImageError(true)}
         />
       ) : (
-        <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs font-medium p-4">
-          <span className="text-center">
-            Photo placeholder<br/>
-            <span className="text-[10px]">Add: public/portfolio-image.jpg</span>
+        <div className="w-full h-full flex flex-col items-center justify-center text-gray-400 text-xs font-medium p-4 bg-gradient-to-br from-blue-50 to-purple-50">
+          <div className="text-4xl mb-2">📷</div>
+          <span className="text-center font-semibold mb-1">Photo Placeholder</span>
+          <span className="text-[10px] text-center leading-tight">
+            Add your image file:<br/>
+            <code className="bg-white/50 px-2 py-1 rounded text-[9px] font-mono">
+              public/portfolio-image.jpg
+            </code>
           </span>
         </div>
       )}
