@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import PortfolioImage from '@/components/PortfolioImage'
 
 export default function Home() {
   return (
@@ -8,16 +8,11 @@ export default function Home() {
         <header className="mb-12 animate-fade-in">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
             <div className="flex-shrink-0">
-              <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white/50">
-                <Image
-                  src="/portfolio-image.jpg"
-                  alt="Victor Li - Senior UX/UI Engineer"
-                  fill
-                  className="object-cover"
-                  priority
-                  sizes="(max-width: 768px) 192px, 224px"
-                />
-              </div>
+              <PortfolioImage 
+                width={224}
+                height={224}
+                className="w-48 h-48 md:w-56 md:h-56"
+              />
             </div>
             <div className="flex-1 text-center md:text-left">
               <p className="text-lg font-medium text-gray-600 mb-2">Victor Li</p>

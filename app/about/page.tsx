@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import PortfolioImage from '@/components/PortfolioImage'
 
 export default function About() {
   return (
@@ -6,16 +6,11 @@ export default function About() {
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
           <div className="flex-shrink-0">
-            <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white/50">
-              <Image
-                src="/portfolio-image.jpg"
-                alt="Victor Li - Senior UX/UI Engineer"
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 192px, 256px"
-              />
-            </div>
+            <PortfolioImage 
+              width={256}
+              height={256}
+              className="w-48 h-48 md:w-64 md:h-64"
+            />
           </div>
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-5xl md:text-6xl font-bold mb-4 text-gradient">About</h1>
